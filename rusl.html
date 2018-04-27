@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+
+<link rel="icon" href="image/favicon.ico" type="image/x-icon"/>
+
+
+<title>Opshop</title>
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+
+
+
+<style>
+	
+
+
+
+.glyphicon-menu-hamburger:hover{
+color:orange;
+transition-duration:0.3s;
+}
+
+
+
+
+
+
+h1{
+	margin-left:550px;
+	font-family: 'Shrikhand', cursive;
+	margin-top:150px;
+	
+}
+
+
+.sidenav {
+    height: 500px;
+    width: 0;
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+
+#navbar{
+position:absolute;
+}
+
+
+.imgmain{
+	height:300px; width:350px; position:absolute; margin-top:700px;
+}
+
+
+.imgmain1{
+	height:300px; width:297px; position:absolute; margin-top:727px; margin-left:1050px;
+}
+
+
+.link1{
+color:red;
+margin-left:270px;
+font-family: 'Shrikhand', cursive;
+}
+
+
+.link2{
+	color:black;
+	margin-left:30px;
+	font-family: 'Shrikhand', cursive;
+}
+
+.link3{
+	color:black;
+	margin-left:30px;
+	font-family: 'Shrikhand', cursive;
+}
+
+
+
+
+.link1:hover{
+color:orange;
+transition-duration:0.3s;
+}
+
+
+.link2:hover{
+	color:orange;
+	transition-duration:0.3s;
+}
+
+.link3:hover{
+color:orange;
+transition-duration:0.3s;
+}
+
+#loading{
+	background-color:orange;
+	 position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:99;
+
+}
+
+.loadh1{
+	margin-left:570px;
+	margin-top:250px;
+	color:white;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+    text-shadow:2px 2px black;
+
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {color: orange;}
+    to {color: white;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {color: orange;}
+    to {color: white;}
+}
+
+
+
+
+
+
+
+
+.loadh2{
+	margin-left:400px;
+	margin-top:20px;
+	 text-shadow:2px 2px white;
+}
+
+.loadimg{
+	height:100px; width:100px;
+	margin-top:10px;
+	margin-left:600px;
+	 -webkit-animation:spin 1.5s linear infinite;
+    -moz-animation:spin 1.5s linear infinite;
+    animation:spin 1.7s linear infinite;
+}
+
+
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+.dropdown{
+ display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px grey;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.products{
+	height:200px; width:250px;
+	margin-left:40px;
+	margin-top:20px;
+
+	}
+
+
+
+
+figure {
+	overflow: hidden;
+
+}
+
+
+
+
+/* Zoom In #1 */
+ .gallery_product  figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+ .gallery_product  figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+
+.gallery_product{
+	margin-bottom:85px;
+}
+
+
+
+.top{
+	font-family: 'Faster One', cursive;
+}
+
+
+
+input[type=search] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color:transparent;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+   position:absolute;
+    margin-left:1000px;
+  color:white;
+
+    
+}
+
+input[type=search]:focus {
+    width: 300px;
+}
+
+
+
+
+.glyphicon-search{
+	position:absolute;
+	margin-left:1010px;
+	margin-top:15px;
+	font-size:20px;
+}
+
+
+
+
+
+.footer1{
+	position:absolute;
+	background-color:#ffaf0f;
+	height:200px; width:100%;
+	margin-top:1200px;
+	
+
+}
+
+.footer2{
+	position:absolute;
+	background-color:#f99f02;
+	height:100px; width:100%;
+	margin-top:1350px;
+
+
+}
+
+
+.footerh{
+	position: absolute;
+margin-top:60px;
+margin-left:0px;
+font-size:20px;
+}
+
+
+
+.f1p{
+	
+margin-left:20px;
+margin-top:40px;
+    font-size:20px;
+    font-family: 'Shrikhand', cursive;
+}
+
+
+
+.flog{
+  height:40px; 
+  width:40px; position:absolute; 
+  margin-top:-100px;
+  margin-left:600px;"
+}
+
+.flog:hover{
+  height:50px; width:50px;
+  transition-duration:1s;
+}
+
+.ilog{
+position:absolute;
+ height:50px;
+  width:50px; 
+  margin-top:-105px; 
+  margin-left:670px;
+}
+
+
+.ilog:hover{
+  height:60px; width:60px;
+  transition-duration:1s;
+}
+
+::placeholder{
+color:white;
+}
+</style>
+
+
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loading"><h1 class="loadh1">OPSHOP</h1><h1 class="loadh2">Хорошее качество, Идеальная цена</h1><img class="loadimg" src="image/loading1.png"></div>
+
+
+
+
+
+
+
+
+
+
+
+<div  style="background-color:transparent;  height:100px;  top:0; width:100%;
+" id="navbar">
+
+
+<form>
+	
+<input type="search" name="search" placeholder="Search">
+<span class="glyphicon glyphicon-search"></span>
+</form>
+
+
+
+<img style="height:100px; width:100px; position: absolute; margin-top: 0px; margin-left: 100px;" src="image/logo.png">
+
+
+
+
+<div  style="background-color:#ffa500;" id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <hr>
+  <a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/relectronics.html">электроника</a>
+  <hr>
+  <a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/rclothes.html">одежда</a>
+  <hr>
+  <a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/rtoys.html">игрушки</a>
+  <hr>
+  <a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/rhome.html">для домa</a>
+  <hr>
+</div>
+        
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><span style="margin-top:5px	; margin-left:10px;" class="glyphicon glyphicon-menu-hamburger"></span></span>
+
+<a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/index.html#navbar" style="text-decoration:none; font-size:25px;" class="link1">Главная
+</a>
+<a href="#"  style="text-decoration:none; font-size:25px;" class="link2">контакт</a>
+
+
+
+
+<div class="dropdown">
+<a href="#"  style="text-decoration:none; font-size:25px;" class="link3">рус</a>
+<div class="dropdown-content">
+
+<a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/hayl.html">հայ</a>
+<a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/index.html">eng</a>
+
+</div>
+</div>
+
+
+
+  </div>      
+
+<section>
+
+
+
+<img style="width:100%" src="image/111.jpg">
+
+
+
+</section>
+
+
+
+
+
+
+<section>
+<h1 style="margin-left:559px;">Opshop</h1>
+<div style="background-color:black; height:1px; width:100%;"></div>
+<hr>
+
+<h1 style="margin-left:400px; margin-top:110px; position:absolute;"><span style="color:red;">Opshop</span>это умный интернет-магазин</h1>
+<h1 style="margin-left:10px; margin-top:260px; position:absolute;">2.купите<br> продукты с одним вызовом</h1>
+<h1 style="margin-left:630px; margin-top:210px; position:absolute;">1.выберите свой стиль</h1>
+<img style="height:300px; width:300px; position:absolute; margin-top:200px; margin-left:400px;" src="image/room.png">
+<img style="height:350px; width:350px; position:absolute; margin-top:50px; margin-left:990px;" src="image/room1.png">
+<img  style="height:500px; width:1348px;" src="image/design3.png">
+</section>
+<h1 class="top">Лучшие продукты</h1>
+<hr>
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<figure><img src="image/test.png" class="img-responsive"></figure>
+
+
+</div>
+
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<figure><img src="image/test.png" class="img-responsive"></figure>
+
+
+</div>
+
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<figure><img src="image/test.png" class="img-responsive"></figure>
+
+
+</div>
+
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<figure><img src="image/test.png" class="img-responsive"></figure>
+
+
+</div>
+
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<figure><img src="image/test.png" class="img-responsive"></figure>
+
+
+</div>
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<figure><img src="image/test.png" class="img-responsive"></figure>
+
+
+</div>
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<figure><img src="image/test.png" class="img-responsive"></figure>
+
+
+</div>
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<figure><img src="image/test.png" class="img-responsive"></figure>
+
+
+</div>
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<figure><img src="image/test.png" class="img-responsive"></figure>
+
+
+</div>
+
+
+
+
+
+
+
+
+<a href="#navbar"><div style="position:absolute;  background-color:#f9c402; height:70px; width:100%; margin-top:1150px;"><span style="margin-left:660px;  font-size:200%; color:white;" class="glyphicon glyphicon-chevron-up"></span><p style=" font-family: 'Shrikhand', cursive; text-align:center; color:white;">перейти наверх</p></div></a>
+
+<footer class="footer1">
+
+<p class="f1p">Opshop - это умный интернет-магазин <br>вы можете покупать продукты одним звонком<br>и вы получите свой продукт.</p>
+
+<a  href="#"><img class="flog"  src="image/flogo.jpeg"></a>
+<a  href="#"><img class="ilog"  src="image/ilogo.png"></a>
+
+</footer>
+<footer class="footer2">
+
+<h1 class="footerh">&copy 2018, <span style="color:red;">Opshop.am</span></h1>
+<img style="height:100px; width:100px; margin-top:-10px;" src="image/logo1.png">
+
+
+
+</footer>
+
+<script>
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+
+
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 230) {
+	    $(".navbar").css("background" , "orange");
+	  }
+
+	  else{
+		  $(".navbar").css("background" , "transparent");  	
+	  }
+  })
+})
+
+
+
+
+
+
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("").style.display = "block";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Opshop</title>
+
+<link rel="icon" href="image/favicon.ico" type="image/x-icon"/>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+<style>
+input[type=search] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -w.dropdown{
+ display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px grey;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.link1{
+color:red;
+margin-left:270px;
+font-family: 'Shrikhand', cursive;
+}
+
+
+.link2{
+	color:black;
+	margin-left:30px;
+	font-family: 'Shrikhand', cursive;
+}
+
+.link3{
+	color:black;
+	margin-left:30px;
+	font-family: 'Shrikhand', cursive;
+}
+
+
+
+
+.link1:hover{
+color:orange;
+transition-duration:0.3s;
+}
+
+
+.link2:hover{
+	color:orange;
+	transition-duration:0.3s;
+}
+
+.link3:hover{
+color:orange;
+transition-duration:0.3s;
+}ebkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+   position:absolute;
+    margin-left:1000px;
+  
+
+    
+}
+
+input[type=search]:focus {
+    width: 300px;
+}
+
+
+
+
+.glyphicon-search{
+	position:absolute;
+	margin-left:1010px;
+	margin-top:15px;
+	font-size:20px;
+}
+
+
+.dropdown{
+ display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px grey;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.link1{
+color:red;
+margin-left:270px;
+font-family: 'Shrikhand', cursive;
+}
+
+
+.link2{
+	color:black;
+	margin-left:30px;
+	font-family: 'Shrikhand', cursive;
+}
+
+.link3{
+	color:black;
+	margin-left:30px;
+	font-family: 'Shrikhand', cursive;
+}
+
+
+
+
+.link1:hover{
+color:orange;
+transition-duration:0.3s;
+}
+
+
+.link2:hover{
+	color:orange;
+	transition-duration:0.3s;
+}
+
+.link3:hover{
+color:orange;
+transition-duration:0.3s;
+}
+
+
+
+#navbar{
+
+}
+
+
+
+.sidenav {
+    height: 500px;
+    width: 0;
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:white;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+.glyphicon-menu-hamburger:hover{
+color:orange;
+transition-duration:0.3s;
+}
+
+
+
+
+
+.products{
+	height:200px; width:250px;
+	margin-left:40px;
+	margin-top:20px;
+
+	}
+
+
+
+
+figure {
+	overflow: hidden;
+
+}
+
+
+
+
+/* Zoom In #1 */
+ .gallery_product  figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+ .gallery_product  figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+
+.gallery_product{
+	margin-bottom:85px;
+}
+
+
+.e{
+	font-family: 'Shrikhand', cursive;
+	text-align:center;
+}
+
+
+
+
+.footer1{
+	position:absolute;
+	background-color:#ffaf0f;
+	height:200px; width:100%;
+	margin-top:1200px;
+	
+
+}
+
+.footer2{
+	position:absolute;
+	background-color:#f99f02;
+	height:100px; width:100%;
+	margin-top:1350px;
+
+
+}
+
+
+.footerh{
+	position: absolute;
+margin-top:60px;
+margin-left:0px;
+font-size:20px;
+}
+
+
+
+.f1p{
+	
+margin-left:20px;
+margin-top:40px;
+   font-size:20px;
+   font-family: 'Shrikhand', cursive;
+}
+
+
+.flog{
+  height:40px; 
+  width:40px; position:absolute; 
+  margin-top:-100px;
+  margin-left:600px;"
+}
+
+.flog:hover{
+  height:50px; width:50px;
+  transition-duration:1s;
+}
+
+.ilog{
+position:absolute;
+ height:50px;
+  width:50px; 
+  margin-top:-105px; 
+  margin-left:670px;
+}
+
+
+.ilog:hover{
+  height:60px; width:60px;
+  transition-duration:1s;
+}
+
+
+h1{
+	font-family: 'Shrikhand', cursive;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div  style="background-color:transparent;  height:100px;  top:0; width:100%;
+" id="navbar">
+
+
+<form>
+	
+<input type="search" name="search" placeholder="Search">
+<span class="glyphicon glyphicon-search"></span>
+</form>
+
+
+
+<img style="height:100px; width:100px; position: absolute; margin-top: 0px; margin-left: 100px;" src="image/logo.jpeg">
+
+
+
+
+<div  style="background-color:#ffa500;" id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <hr>
+  <a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/electronics.html">electronics</a>
+  <hr>
+  <a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/clothes.html">clothes</a>
+  <hr>
+  <a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/toys.html">toys</a>
+  <hr>
+  <a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/home.html">home</a>
+  <hr>
+</div>
+        
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"><span style="margin-top:5px	; margin-left:10px;" class="glyphicon glyphicon-menu-hamburger"></span></span>
+
+<a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/index.html" style="text-decoration:none; font-size:25px;" class="link1">Home</a>
+<a href="#"  style="text-decoration:none; font-size:25px;" class="link2">Contact</a>
+
+
+
+
+<div class="dropdown">
+<a href="#"  style="text-decoration:none; font-size:25px;" class="link3">eng</a>
+<div class="dropdown-content">
+
+<a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/hayl.html">հայ</a>
+<a href="file:///C:/Users/Poghosyan%20Aram/Desktop/opshop/all/rusl.html">рус</a>
+
+</div>
+</div>
+
+
+
+  </div>      
+
+
+<h1 class="e">Clothes</h1>
+
+<hr>
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<a href="#"><figure><img src="image/test.png" class="img-responsive"></figure></a>
+
+
+</div>
+
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<a href="#"><figure><img src="image/test.png" class="img-responsive"></figure></a>
+
+
+</div>
+
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<a href="#"><figure><img src="image/test.png" class="img-responsive"></figure></a>
+
+
+</div>
+
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<a href="#"><figure><img src="image/test.png" class="img-responsive"></figure></a>
+
+
+</div>
+
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<a href="#"><figure><img src="image/test.png" class="img-responsive"></figure></a>
+
+
+</div>
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<a href="#"><figure><img src="image/test.png" class="img-responsive"></figure></a>
+
+
+</div>
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<a href="#"><figure><img src="image/test.png" class="img-responsive"></figure></a>
+
+
+</div>
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<a href="#"><figure><img src="image/test.png" class="img-responsive"></figure></a>
+
+
+</div>
+
+<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+
+
+<a href="#"><figure><img src="image/test.png" class="img-responsive"></figure></a>
+
+
+</div>
+
+
+
+
+
+
+<a href="#navbar"><div style="position:absolute;  background-color:#f9c402; height:70px; width:100%; margin-top:1150px;"><span style="margin-left:660px;  font-size:200%; color:white;" class="glyphicon glyphicon-chevron-up"></span><p style=" font-family: 'Shrikhand', cursive; text-align:center; color:white;">go to top</p></div></a>
+
+<footer class="footer1">
+
+<p class="f1p">Opshop is a smart online shop <br>you can buy products with one call<br>and you will get your product.</p>
+
+<a  href="#"><img class="flog"  src="image/flogo.jpeg"></a>
+<a  href="#"><img class="ilog"  src="image/ilogo.png"></a>
+
+</footer>
+<footer class="footer2">
+
+<h1 class="footerh">&copy 2018, <span style="color:red;">Opshop.am</span></h1>
+<img style="height:100px; width:100px; margin-top:-10px;" src="image/logo1.png">
+
+
+
+</footer>
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+</body>
+</html>
