@@ -319,7 +319,7 @@ input[type=search]:focus {
 	position:absolute;
 	background-color:#ffaf0f;
 	height:200px; width:100%;
-	margin-top:1200px;
+	margin-top:1550px;
 	 box-shadow: 0px 8px 16px 5px black;
 
 }
@@ -328,7 +328,7 @@ input[type=search]:focus {
 	position:absolute;
 	background-color:#f99f02;
 	height:100px; width:100%;
-	margin-top:1350px;
+	margin-top:1700px;
  box-shadow: 0px 8px 16px 7px black;
 
 }
@@ -453,6 +453,29 @@ margin-left:660px;
 
 
 
+#rate{
+  background-image:url("image/rate.jpeg");
+  width:100%;
+  height:300px;
+position:absolute;
+margin-top:1100px;
+
+}
+
+
+
+.glyphicon-star-empty{
+  color:red;
+}
+
+
+
+
+.btn-primary:focus{
+  background-color:green;
+}
+
+
 
 
 
@@ -522,7 +545,7 @@ margin-left:67%;
 
 <body onload="myFunction()" style="margin:0;">
 
-<div id="loading"><h1 class="loadh1">OPSHOP</h1><h1 class="loadh2">Good quality,Ideal price</h1><img class="loadimg" src="image/test.png"></div>
+<div id="loading"><h1 class="loadh1">OPSHOP</h1><h1 class="loadh2">Good quality,Ideal price</h1><img class="loadimg" src="image/loading1.png"></div>
 
 
 
@@ -546,7 +569,7 @@ margin-left:67%;
 
 
 
-<img style="height:100px; width:100px; position: absolute; margin-top: 0px; margin-left: 100px;" src="image/test.png">
+<img style="height:100px; width:100px; position: absolute; margin-top: 0px; margin-left: 100px;" src="image/logo.png">
 
 
 
@@ -591,7 +614,7 @@ margin-left:67%;
 
 
 
-<img style="width:100%" src="image/test.png">
+<img style="width:100%" src="image/111.jpg">
 
 
 
@@ -610,8 +633,8 @@ margin-left:67%;
 <h1 id="tit"><span style="color:red;">Opshop</span> is a smart online shop</h1>
 <h1 id="buy">2.buy  your<br> products with one call</h1>
 <h1 id="cstyle">1.choose your style</h1>
-<img id="mp1" src="image/test.png">
-<img id="mp2" src="image/test.png">
+<img id="mp1" src="image/room.png">
+<img id="mp2" src="image/room1.png">
 </div>
 
 <h1 class="top">Top products</h1>
@@ -698,25 +721,48 @@ margin-left:67%;
 </section>
 
 
+<div id="rate">
+
+<h1 style="margin-top:0px; color:gold;">Rate us</h1>
+
+
+<a class="lolo"><span style="font-size:80px; margin-left:410px; margin-top:50px; color:red;" class="glyphicon glyphicon-star-empty"></span></a>
+<a class="lolo"><span style="font-size:80px; margin-left:10px; color:red;" class="glyphicon glyphicon-star-empty"></span></a>
+<a class="lolo"><span style="font-size:80px; margin-left:10px; color:red;" class="glyphicon glyphicon-star-empty"></span></a>
+<a class="lolo"><span   style="font-size:80px; margin-left:10px; color:red;" class="glyphicon glyphicon-star-empty"></span></a>
+<a class="lolo"><span  style="font-size:80px; margin-left:10px; color:gold;"  class="glyphicon glyphicon-star-empty"></span></a>
+
+
+
+
+
+
+
+
+
+<button style="margin-top:100px; margin-left:-260px; background-color:#094099;" type="button" class="btn btn-primary">Send</button>
+
+</div>
+
 
 
 
 <div class="footdiv">
-<a href="#navbar"><div style="position:absolute;  background-color:#f9c402; height:70px; width:100%; margin-top:1150px; box-shadow: 0px 1px 5px 1px black;"><span  class="glyphicon glyphicon-chevron-up"></span><p style=" font-family: 'Shrikhand', cursive; text-align:center; color:white;">go to top</p></div></a>
+<a href="#navbar"><div style="position:absolute;  background-color:#f9c402; height:70px; width:100%; margin-top:1500px; box-shadow: 0px 1px 5px 1px black;"><span  class="glyphicon glyphicon-chevron-up"></span><p style=" font-family: 'Shrikhand', cursive; text-align:center; color:white;">go to top</p></div></a>
 </div>
 
 <footer class="footer1">
 
 <p class="f1p">Opshop is a smart online shop <br>you can buy products with one call<br>and you will get your product.</p>
 
-<a  href="#"><img class="flog"  src="image/test.png"></a>
-<a  href="#"><img class="ilog"  src="image/test.png"></a>
+<a  href="#"><img class="flog"  src="image/flogo.jpeg"></a>
+<a  href="#"><img class="ilog"  src="image/ilogo.png"></a>
 
 </footer>
 <footer class="footer2">
 
 <h1 class="footerh">&copy 2018, <span style="color:red;">Opshop.am</span></h1>
-<img style="height:100px; width:100px; margin-top:-10px;" src="image/test.png">
+<img style="height:100px; width:100px; margin-top:-10px;" src="image/logo1.png">
 
 
 
@@ -764,6 +810,11 @@ function showPage() {
   document.getElementById("loading").style.display = "none";
   document.getElementById("").style.display = "block";
 }
+
+
+$('.lolo').click( function(){
+    $(this).find('span').toggleClass('glyphicon-star-empty').toggleClass('glyphicon-star');
+});
 </script>
 
 </body>
